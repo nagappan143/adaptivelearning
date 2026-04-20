@@ -29,7 +29,7 @@ const cors = require("cors");
 
 // const routes = require("./src/routes/index");
 const { initSessionCleanupJob } = require("./src/jobs/sessionCleanup.job");
-const routes = require('./src/routes');
+const routes = require('./src/routes/index');
 // app.use('/api', routes);
 
 const app = express();
