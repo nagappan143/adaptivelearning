@@ -27,8 +27,10 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
-const routes = require("./src/routes/index");
+// const routes = require("./src/routes/index");
 const { initSessionCleanupJob } = require("./src/jobs/sessionCleanup.job");
+const routes = require('./src/routes');
+// app.use('/api', routes);
 
 const app = express();
 
